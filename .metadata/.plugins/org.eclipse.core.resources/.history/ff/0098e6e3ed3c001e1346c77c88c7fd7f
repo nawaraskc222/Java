@@ -1,0 +1,18 @@
+package TEST;
+
+public class Puppies {
+	
+	Puppies p;
+	public Puppies(Puppies p) {
+		
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		Animal a= new Dog();
+		Puppies p = new Puppies();
+	}
+
+}

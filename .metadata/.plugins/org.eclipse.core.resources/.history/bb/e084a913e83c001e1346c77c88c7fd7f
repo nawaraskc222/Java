@@ -1,0 +1,19 @@
+package TEST;
+
+import java.util.ArrayList;
+
+public class Nawa {
+
+	public static void main(String []args) {
+
+		System.out.println("hiiii\n");
+		ArrayList <String> n1= new ArrayList<String>();
+		n1.add("Ram");
+		n1.add("Nawaras");
+		
+		for (String string : n1) {
+			System.out.println(string);
+		}
+	}
+	
+}

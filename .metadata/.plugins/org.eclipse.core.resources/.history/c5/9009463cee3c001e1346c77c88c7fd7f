@@ -1,0 +1,13 @@
+package TEST;
+import java.util.*;
+
+public class Dog extends Animals{
+	
+	@Override
+	public void show() {
+		
+		System.out.println("Im Animal");
+		
+	}
+
+}

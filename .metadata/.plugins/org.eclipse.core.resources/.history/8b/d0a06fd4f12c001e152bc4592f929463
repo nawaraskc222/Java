@@ -1,0 +1,41 @@
+package TEST;
+
+import java.io.File;
+import java.io.IOException;
+
+public class ImageProcessingExample {
+    public static void main(String[] args) {
+        String inputImagePath = "path/to/input/image.jpg";
+        String outputImagePath = "path/to/output/grayscale_image.jpg";
+
+        // Read the image using JAI
+        PlanarImage inputImage = JAI.create("fileload", inputImagePath);
+
+        // Convert the image to grayscale
+        PlanarImage grayscaleImage = toGrayscale(inputImage);
+
+        // Save the processed image
+        saveImage(grayscaleImage, outputImagePath);
+
+        System.out.println("Image processing completed.");
+    }
+
+    private static PlanarImage toGrayscale(PlanarImage inputImage) {
+        // Convert the image to grayscale using ColorConvertDescriptor
+        ParameterBlock pb = new ParameterBlock();
+        pb.addSource(inputImage);
+        pb.add(ColorConvertDescriptor.RGB_TO_GRAY);
+
+        return JAI.create("colorconvert", pb);
+    }
+
+    private static void saveImage(PlanarImage image, String outputImagePath) {
+        try {
+            // Save the image to the specified path
+            File outputFile = new File(outputImagePath);
+            JAI.create("filestore", image, outputFile.getAbsolutePath(), "JPEG");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+}

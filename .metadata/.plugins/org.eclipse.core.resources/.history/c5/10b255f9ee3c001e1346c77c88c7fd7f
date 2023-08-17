@@ -1,0 +1,22 @@
+package TEST;
+
+public class Puppies {
+	
+	Animals a;
+	
+
+	public Puppies(Animals a2) {
+			
+		this.a=a;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		Animals a= new Dog();
+		
+		Puppies p = new Puppies(a);
+	}
+
+}

@@ -1,0 +1,18 @@
+package TEST;
+import java.util.*;
+
+public class Dog extends Animal{
+	
+	@Override
+	public void show() {
+		
+		System.out.println("Im Animal");
+		
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

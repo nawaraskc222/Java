@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="javax.media.jai.JAI"/>
+    <fullyQualifiedTypeName name="java.awt.image.renderable.ParameterBlock"/>
+    <fullyQualifiedTypeName name="javax.media.jai.operator.ColorConvertDescriptor"/>
+    <fullyQualifiedTypeName name="java.awt.color.ColorSpace"/>
+    <fullyQualifiedTypeName name="javax.media.jai.RenderedOp"/>
+    <fullyQualifiedTypeName name="java.io.IOException"/>
+    <fullyQualifiedTypeName name="java.awt.image.ImagingOpException"/>
+    <fullyQualifiedTypeName name="TEST.Animal"/>
+    <fullyQualifiedTypeName name="TEST.Puppies"/>
+</qualifiedTypeNameHistroy>
